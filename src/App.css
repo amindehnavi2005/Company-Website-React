@@ -3,10 +3,35 @@
     src: url("assets/IRANSansX-Medium.ttf");
 }
 
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #707070;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9a7af1;
+}
+
+::selection {
+    background-color: #9a7af1;
+    color: white;
+}
+
 body {
     font-family: IRANSans;
 }
 
-nav{
+nav {
     z-index: 1001 !important;
+}
+
+.gradientBg {
+    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+}
+
+.btnPrimary {
+    @apply bg-secondary px-8 py-3 text-white font-semibold rounded transition-all hover:bg-primary duration-300;
 }
